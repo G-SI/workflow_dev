@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Interaction</title>
 
-    <!-- Connect CSS -->
-    <link rel="stylesheet" href="C:\push_pull\Cpp\Assets\style2.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
     <div class="container">
         <h1 id="heading">Hello World</h1>
-        <button onclick="changeText()">Click Me</button>
+
+        <!-- Button triggers JS -->
+        <button id="btn">Click Me</button>
     </div>
 
+    <!-- JS -->
     <script src="script.js"></script>
+
+    <!-- Connect button to JS function -->
+    <script>
+        document.getElementById("btn").addEventListener("click", changeText);
+    </script>
+
 </body>
 </html>
